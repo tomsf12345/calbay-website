@@ -26,21 +26,24 @@
         </div>
     </nav>
 
-    <header class="relative h-[80vh] flex items-center justify-center bg-slate-900 text-white text-center">
+    <!-- UPDATED: Mobile responsive hero header -->
+    <header class="relative min-h-[80vh] py-16 flex items-center justify-center bg-slate-900 text-white text-center overflow-hidden">
         <div class="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1558494949-ef010cbdcc4b?auto=format&fit=crop&q=80')] bg-cover bg-center"></div>
         <div class="absolute inset-0 hero-gradient"></div>
         
-        <div class="relative z-10 px-6 max-w-5xl">
-            <div class="mb-6 inline-block bg-blue-600/20 border border-blue-500/50 px-4 py-1 rounded-full text-blue-400 text-sm font-bold tracking-widest uppercase">
+        <div class="relative z-10 px-4 sm:px-6 max-w-5xl">
+            <div class="mb-6 inline-block bg-blue-600/20 border border-blue-500/50 px-4 py-1.5 rounded-full text-blue-400 text-xs sm:text-sm font-bold tracking-widest uppercase">
                 Licensed & Insured | 20+ Years Experience
             </div>
-            <h2 class="text-5xl md:text-7xl font-black mb-6 leading-tight uppercase tracking-tight">Infrastructure <br><span class="text-blue-500">You Can Trust.</span></h2>
-            <p class="text-xl md:text-2xl mb-10 text-gray-200 leading-relaxed font-light max-w-4xl mx-auto">
+            <h2 class="text-3xl sm:text-5xl md:text-7xl font-black mb-6 leading-tight uppercase tracking-tight break-words">
+                Infrastructure <br><span class="text-blue-500">You Can Trust.</span>
+            </h2>
+            <p class="text-base sm:text-xl md:text-2xl mb-10 text-gray-200 leading-relaxed font-light max-w-4xl mx-auto">
                 We provide professional security camera installation, network cabling, Wi-Fi setup, and low voltage wiring services for commercial customers. We focus on reliable installation, clean workmanship, and dependable support.
             </p>
-            <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="#contact" class="bg-blue-600 text-white px-10 py-4 rounded-md text-lg font-bold hover:bg-blue-500 transition-all shadow-xl">Get a Free Estimate</a>
-                <a href="#services" class="border border-white/30 backdrop-blur-sm px-10 py-4 rounded-md text-lg font-bold hover:bg-white hover:text-slate-900 transition-all">Our Services</a>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-blue-600 text-white px-8 sm:px-10 py-4 rounded-md text-base sm:text-lg font-bold hover:bg-blue-500 transition-all shadow-xl">Get a Free Estimate</a>
+                <a href="#services" class="border border-white/30 backdrop-blur-sm px-8 sm:px-10 py-4 rounded-md text-base sm:text-lg font-bold hover:bg-white hover:text-slate-900 transition-all">Our Services</a>
             </div>
         </div>
     </header>
@@ -179,6 +182,7 @@
         <p class="tracking-widest uppercase">Licensed &bull; Bonded &bull; Insured</p>
     </footer>
 
+    <!-- Form handling script -->
     <script>
         const contactForm = document.getElementById('contact-form');
         const submitBtn = document.getElementById('submit-btn');
